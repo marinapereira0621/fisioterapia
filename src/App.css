@@ -1,0 +1,226 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f7f6;
+  color: #344b50;
+}
+.cabecalho {
+  height: 70px;
+  background-color: #247d78;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+.cabecalho h2 {
+  font-size: 24px;
+}
+.cabecalho span {
+  font-size: 14px;
+}
+.layout {
+  display: flex;
+  min-height: calc(100vh - 70px);
+}
+.menu-lateral {
+  width: 220px;
+  background-color: #dcefeb;
+  padding: 25px 20px;
+}
+.menu-lateral h3 {
+  margin-bottom: 25px;
+  color: #247d78;
+}
+.menu-lateral ul {
+  list-style: none;
+}
+.menu-lateral li {
+  margin-bottom: 18px;
+}
+.menu-lateral a {
+  text-decoration: none;
+  color: #344b50;
+  font-size: 16px;
+  display: block;
+  padding: 10px;
+  border-radius: 6px;
+}
+.menu-lateral a:hover,
+.menu-lateral a.active {
+  background-color: #247d78;
+  color: white;
+}
+.conteudo {
+  flex: 1;
+  min-width: 0;
+  padding: 30px;
+}
+.conteudo h1 {
+  color: #247d78;
+  margin-bottom: 10px;
+}
+.conteudo p {
+  margin-bottom: 25px;
+  color: #667a7d;
+}
+.indicadores {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.card-indicador {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 180px;
+  box-shadow: 0 2px 8px #00000012;
+  border-left: 5px solid #42a89e;
+}
+.card-indicador h3 {
+  font-size: 15px;
+  color: #667a7d;
+}
+.card-Indicador p {
+  font-size: 30px;
+  font-weight: bold;
+  color: #247d78;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+.painel {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-top: 30px;
+  box-shadow: 0 2px 8px #00000012;
+}
+.painel h2 {
+  color: #247d78;
+  margin-bottom: 15px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+th {
+  background-color: #247d78;
+  color: white;
+  padding: 15px;
+  text-align: left;
+}
+td {
+  padding: 15px;
+  border-bottom: 1px solid #e5eeee;
+}
+tr:hover {
+  background-color: #f0f8f6;
+}
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+.campo label {
+  font-weight: bold;
+  color: #344b50;
+}
+.campo input {
+  padding: 12px;
+  border: 1px solid #cbdad8;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+.campo input:focus {
+  border-color: #247d78;
+}
+.botao {
+  background-color: #247d78;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.botao:hover {
+  background-color: #195e5a;
+}
+.pesquisa {
+  display: flex;
+  align-items: end;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.pesquisa .campo {
+  flex: 1;
+  margin-bottom: 0;
+}
+.tela-login {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e2f1ed;
+  padding: 20px;
+}
+.form-login {
+  background-color: white;
+  width: 100%;
+  max-width: 400px;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px #00000015;
+}
+.form-login h1 {
+  text-align: center;
+  color: #247d78;
+  margin-bottom: 10px;
+}
+.form-login p {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #667a7d;
+}
+.form-login .botao {
+  width: 100%;
+  margin-top: 10px;
+}
+@media (max-width: 650px) {
+  .layout {
+    flex-direction: column;
+  }
+  .menu-lateral {
+    width: 100%;
+  }
+  .menu-lateral ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .conteudo {
+    padding: 20px;
+  }
+  .pesquisa {
+    flex-wrap: wrap;
+  }
+  table {
+    font-size: 13px;
+  }
+  th, td {
+    padding: 10px;
+  }
+}
